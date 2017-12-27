@@ -2,6 +2,16 @@ var pubnub = new PubNub({
     subscribeKey: "YOUR-SUB-KEY",
     publishKey: "YOUR-PUB-KEY",
 });
+
+var switches = [
+//Name to show    name on raspberry pi server
+    ["Switch 1", "switch1"],
+    ["Switch 2", "switch2"],
+    ["Switch 3", "switch3"],
+    ["Switch 4", "switch4"],
+    ["Switch 5", "switch5"],
+];
+
 function sendMessage(msg){
     pubnub.publish({message: msg, channel: "pubnub_aiy"});
 }
@@ -15,14 +25,6 @@ pubnub.addListener({
     },
 });
 
-var switches = [
-//Name to show    name on raspberry pi server
-    ["Switch 1", "switch1"],
-    ["Switch 2", "switch2"],
-    ["Switch 3", "switch3"],
-    ["Switch 4", "switch4"],
-    ["Switch 5", "switch5"],
-];
 
 function createButton(name, sendName, switchTo){
     var btn = document.createElement("button");
