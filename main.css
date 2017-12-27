@@ -1,0 +1,25 @@
+body {
+    width: 400px;
+}
+
+#switches {
+    list-style: none;
+    margin: auto;
+}
+
+.control {
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    margin: 10px;
+}
+button {
+    width: 50px;
+    height: 50px;
+}
+.switch-on {
+    float: left;
+}
+.switch-off {
+    float: right;
+}
