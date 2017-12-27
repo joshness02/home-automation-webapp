@@ -14,13 +14,14 @@ pubnub.addListener({
         }
     },
 });
-//sendMessage({switch: "switch2", switchTo: "on"});
+
 var switches = [
-    ["Christmas Tree", "switch1"],
-    ["Living Room Lamp", "switch2"],
-    ["Boy's Christmas Lights", "switch3"],
-    ["Boy's Christmas Tree", "switch4"],
-    ["Other Switch", "switch5"],
+//Name to show    name on raspberry pi server
+    ["Switch 1", "switch1"],
+    ["Switch 2", "switch2"],
+    ["Switch 3", "switch3"],
+    ["Switch 4", "switch4"],
+    ["Switch 5", "switch5"],
 ];
 
 function createButton(name, sendName, switchTo){
