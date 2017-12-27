@@ -1,6 +1,6 @@
 var pubnub = new PubNub({
-    subscribeKey: "sub-c-1545905a-44b5-11e7-b730-0619f8945a4f",
-    publishKey: "pub-c-04b68cf3-7cba-475f-ba4e-5928f2135d40",
+    subscribeKey: "YOUR-SUB-KEY",
+    publishKey: "YOUR-PUB-KEY",
 });
 function sendMessage(msg){
     pubnub.publish({message: msg, channel: "pubnub_aiy"});
