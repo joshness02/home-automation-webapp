@@ -13,7 +13,7 @@ var switches = [
 ];
 
 function sendMessage(msg){
-    pubnub.publish({message: msg, channel: "pubnub_aiy"});
+    pubnub.publish({message: msg, channel: "channel1"});
 }
 
 pubnub.addListener({
